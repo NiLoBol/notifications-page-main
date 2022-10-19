@@ -1,0 +1,117 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --coloractive: hsl(211, 68%, 94%);
+}
+
+#con1 {
+    width: 1000px;
+    max-width: 100%;
+
+}
+
+.active-content {
+    background-color: var(--coloractive);
+    border-radius: 5px;
+}
+
+.active-content:hover {
+    background-color: var(--coloractive) !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+div {
+    font-family: myFirstFont;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+div.row {
+    padding: 10px;
+    margin: 20px;
+}
+
+span {
+    font-family: myFirstFont;
+    font-weight: 500;
+}
+
+.markall:hover {
+    color: var(--Blue);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.bold:hover {
+    color: var(--Blue);
+}
+
+.body {
+    background-color: var(--Lightgrayishblue1);
+    color: var(--Darkgrayishblue);
+
+}
+
+.bgnoti {
+    background-color: var(--Blue);
+    color: var(--Verylightgrayishblue);
+    border-radius: 15px;
+
+}
+
+.boder {
+    border: 1px solid var(--Lightgrayishblue2);
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.boder:hover {
+    border: 1px solid var(--Lightgrayishblue1);
+    background-color: var(--Lightgrayishblue1);
+}
+
+#con1 {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.p-5m-5 {
+    padding: 3rem !important;
+    margin: 3rem !important;
+}
+
+@media(max-width: 576px) {
+    #con1 {
+        width: 100% !important;
+    }
+
+    .p-5m-5 {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+}
